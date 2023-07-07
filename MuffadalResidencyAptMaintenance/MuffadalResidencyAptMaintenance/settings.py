@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Budget',
     'Expense',
     'FundRaise',
+    'LoginUsers',
 ]
 
 MIDDLEWARE = [
