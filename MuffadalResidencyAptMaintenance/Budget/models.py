@@ -1,4 +1,3 @@
-from django.db import models
 from Income.models import IncomeModel
 
 
