@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import ExpenseForm
 
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello world")
+    form = ExpenseForm()
+    return render(request, 'Expense/html/home.html', {"forms": form})
