@@ -1,8 +1,6 @@
-from django.forms import ModelForm
-from .models import BudgetModel
+from django import forms
 
 
-class BudgetForm(ModelForm):
-    class Meta:
-        model = BudgetModel
-        fields = "__all__"
+class BudgetForm(forms.Form):
+    date = forms.DateField()
+    Amount = forms.IntegerField()

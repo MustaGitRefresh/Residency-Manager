@@ -5,4 +5,3 @@ from Income.models import IncomeModel
 class BudgetModel(IncomeModel):
     date = IncomeModel.date
     Amount = IncomeModel.Amount
-

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,13 @@
 </head>
 <body>
     <form>
-
+        {% csrf_token %}
+        <label for="{{forms.date.id_for_label}}">{{forms.date.label}}</label>
+        {{forms.date}}<br>
+        <label for="{{forms.Amount.id_for_label}}">{{forms.Amount.label}}</label>
+        {{forms.Amount}}<br>
+        <input type="submit" value="Submit">
     </form>
 </body>
+<link rel="stylesheet" href="{% static 'Budget/css/style_budget_form_css.css' %}">
 </html>
