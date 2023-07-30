@@ -1,5 +1,5 @@
-from django.forms import ModelForm
 from .models import FundRaiseModel
+from django.forms import ModelForm
 
 
 class FundRaiseForm(ModelForm):
